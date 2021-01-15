@@ -190,9 +190,6 @@ body{
 	}
 
 .sidenav .closebtn {
-	position: absolute;
-	top: 0;
-	left: 25px;
 	font-size: 36px;
 	margin-right: 50px;
 	}
@@ -205,9 +202,9 @@ body{
   	padding: 16px;
 }
 
-.post p{ 
-	margin-left:20%; 
-	margin-right: 20%;
+.post p { 
+	margin-left:10%; 
+	margin-right: 10%;
 	background-color: #A3C2BD;
 	}
 
@@ -241,6 +238,40 @@ body{
 	height: 300px;
 	}
 
+	/* chatten */
+#chatbox {
+	width:75%;
+    text-align:left;
+	background-color:#E6F4EA;
+    height:200px;
+	border:1px solid black;
+    overflow: auto;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+p.userPost {
+    background-color: #9acdf9;
+    width: 75%;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+p.botPost {
+	color: white;
+    background-color: #4D8F85;
+    width: 75%;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    margin-left: 25%;
+    text-align: right;
+}
+
+.input {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*Calender*/
 
@@ -270,13 +301,14 @@ body{
   
   
   .calSchoolBook button {
-	background-color: #4CAF50;
+	background-color: #4D8F85;
 	color: white;
-	padding: 14px 20px;
-	margin: 8px 0;
-	border: none;
+	margin: 0px 0px;
+	border-radius: 5px;
+	border-color: #ddd;
+	border-width: 1px;
 	cursor: pointer;
-	width: 100%;
+	width: 50%;
   }
   
   .calSchoolBook button: hover {
@@ -293,11 +325,11 @@ body{
   
   .calSchoolBook a:link {
 	text-decoration: none;
-	color: #4d8f85;
+	color: #A3C2BD;
   }
   
   .calSchoolBook article, aside, figcaption, figure, footer, hgroup, main, section {
-    display: block;
+	display: block;
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -305,7 +337,8 @@ body{
  
 .month1 {
   padding: 70px 25px;
-  width: 100%;
+  margin-left: 100px;
+  margin-right: 100px;
   background: #4D8F85;
   text-align: center;
   margin-top: 50px;
@@ -335,9 +368,11 @@ body{
 }
 
 .weekdays {
-  margin: 0;
+  margin: 0px;
   padding: 10px 0;
   background-color: #ddd;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .weekdays li {
@@ -348,32 +383,41 @@ body{
 }
 
 .days {
-  padding: 10px 0;
+  padding: 5px 0;
   background: #eee;
   margin: 0;
   align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-bottom: 50px;
 }
 
 .days li {
   list-style-type: none;
   display: inline-block;
   width: 13.6%;
+  height: 13.6%;
   text-align: center;
   margin-bottom: 5px;
   font-size:12px;
   color: #777;
+  padding: 5px;
 }
 
 .days li .active {
-  padding: 5px;
   background: #A3C2BD;
-  color: white !important
+  color: white;
+  border-color: #ddd;
+  border-width: 1px;
+  border-radius: 70%;
+  padding: 5px;
 }
 
 
 span.psw {
   float: right;
   padding-top: 16px;
+
 }  
 
 
